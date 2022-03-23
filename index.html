@@ -14,13 +14,13 @@
   <body>
     
     
-    <script>
-
+<script>
 var xhr = new XMLHttpRequest();
 xhr.open("POST", "/postman", true);
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send(JSON.stringify({
     value: 'value'
+  alert("hello");
 }));
 xhr.onload = function() {
   console.log("HELLO")
